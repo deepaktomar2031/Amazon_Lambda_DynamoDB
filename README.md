@@ -1,1 +1,1 @@
-# Amazon_Lambda_DynamoDB
+# AWS_Lambda_DynamoDB
