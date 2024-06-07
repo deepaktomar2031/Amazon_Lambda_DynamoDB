@@ -1,1 +1,1 @@
-# AWS_DynamoDB
+# CRUD-AWS-Lambda-DynamoDB

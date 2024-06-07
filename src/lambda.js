@@ -1,7 +1,7 @@
 const { db, Table } = require("./db.config.js");
 
 // Create or Update users
-const createOrUpdate = async (data = {}) => {
+const createOrUpdateLambdaFunction = async (data = {}) => {
   const params = {
     TableName: Table,
     Item: data,
@@ -16,7 +16,7 @@ const createOrUpdate = async (data = {}) => {
 };
 
 // Read all users
-const readAllUsers = async () => {
+const readAllUsersLambdaFunction = async () => {
   const params = {
     TableName: Table,
   };
@@ -30,7 +30,7 @@ const readAllUsers = async () => {
 };
 
 // Read Users by ID
-const getUserById = async (value, key = "id") => {
+const getUserByIdLambdaFunction = async (value, key = "id") => {
   const params = {
     TableName: Table,
     Key: {
@@ -46,7 +46,7 @@ const getUserById = async (value, key = "id") => {
 };
 
 // Delete User by ID
-const deleteUserById = async (value, key = "id") => {
+const deleteUserByIdLambdaFunction = async (value, key = "id") => {
   const params = {
     TableName: Table,
     Key: {
@@ -62,4 +62,4 @@ const deleteUserById = async (value, key = "id") => {
   }
 };
 
-module.exports = { createOrUpdate, readAllUsers, getUserById, deleteUserById };
+module.exports = { createOrUpdateLambdaFunction, readAllUsersLambdaFunction, getUserByIdLambdaFunction, deleteUserByIdLambdaFunction };
